@@ -22,9 +22,27 @@ namespace Route_course
             #endregion
 
             #region Question03
-            //3- Look at the line below. Is it a compile-time error, a runtime error, or a logical error? Fix it. int pages = "464";
-            //int pages = "464"; // compilation error
-            int pages = int.Parse("464");
+            ////3- Look at the line below. Is it a compile-time error, a runtime error, or a logical error? Fix it. int pages = "464";
+            ////int pages = "464"; // compilation error
+            //int pages = int.Parse("464");
+            #endregion
+
+            #region Question04
+            //4- Write code that divides 10 by 0 inside a try block, catches the exception, prints "Cannot divide by zero", and then prints "Done" in a finally block.
+            int x = 0;
+            int y = 10;
+            try
+            {
+                int z = y / x;
+                Console.WriteLine(z);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("cannot divide by zero");
+            }
+            finally {
+                Console.WriteLine("Done");
+            }
             #endregion
         }
     }
