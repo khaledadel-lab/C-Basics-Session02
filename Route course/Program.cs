@@ -60,10 +60,25 @@ namespace Route_course
             #endregion
 
             #region Q@uestion07
-            //7- Given string pagesText = "464";, convert it into an int using the Convert class.
-            string pagesText = "464";
-            int pagesText2 = Convert.ToInt32(pagesText);
-            Console.WriteLine(pagesText2);
+            ////7- Given string pagesText = "464";, convert it into an int using the Convert class.
+            //string pagesText = "464";
+            //int pagesText2 = Convert.ToInt32(pagesText);
+            //Console.WriteLine(pagesText2);
+            #endregion
+
+            #region Question08
+            //8- Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";, use int. TryParse() to safely try converting it, and print "Invalid number" if it fails.
+            string yearText = "2023";
+            int yearText2 = int.Parse(yearText);
+            Console.WriteLine(yearText2);
+            string badText = "abc";
+            bool isVaild = int.TryParse(badText, out int result);
+            if (!isVaild) {
+                Console.WriteLine("invaild number");
+            }
+            else {
+                Console.WriteLine(result);
+            }
             #endregion
         }
     }
