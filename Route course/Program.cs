@@ -28,21 +28,28 @@ namespace Route_course
             #endregion
 
             #region Question04
-            //4- Write code that divides 10 by 0 inside a try block, catches the exception, prints "Cannot divide by zero", and then prints "Done" in a finally block.
-            int x = 0;
-            int y = 10;
-            try
-            {
-                int z = y / x;
-                Console.WriteLine(z);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("cannot divide by zero");
-            }
-            finally {
-                Console.WriteLine("Done");
-            }
+            ////4- Write code that divides 10 by 0 inside a try block, catches the exception, prints "Cannot divide by zero", and then prints "Done" in a finally block.
+            //int x = 0;
+            //int y = 10;
+            //try
+            //{
+            //    int z = y / x;
+            //    Console.WriteLine(z);
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine("cannot divide by zero");
+            //}
+            //finally {
+            //    Console.WriteLine("Done");
+            //}
+            #endregion
+
+            #region Question05
+            //5- Declare an int pages = 300; then store it in a double variable without using a cast.
+            int Pages = 300;
+            double pages2 = Pages;
+            Console.WriteLine(pages2);
             #endregion
         }
     }
