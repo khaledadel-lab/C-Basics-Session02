@@ -46,10 +46,17 @@ namespace Route_course
             #endregion
 
             #region Question05
-            //5- Declare an int pages = 300; then store it in a double variable without using a cast.
-            int Pages = 300;
-            double pages2 = Pages;
-            Console.WriteLine(pages2);
+            ////5- Declare an int pages = 300; then store it in a double variable without using a cast.
+            //int Pages = 300;
+            //double pages2 = Pages;
+            //Console.WriteLine(pages2);
+            #endregion
+
+            #region Question06
+            //6- Declare a double price = 49.99; then convert it into an int using a cast.
+            double price = 49.99;
+            int price2 = (int)price; 
+            Console.WriteLine(price2);
             #endregion
         }
     }
