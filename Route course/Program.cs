@@ -67,18 +67,26 @@ namespace Route_course
             #endregion
 
             #region Question08
-            //8- Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";, use int. TryParse() to safely try converting it, and print "Invalid number" if it fails.
-            string yearText = "2023";
-            int yearText2 = int.Parse(yearText);
-            Console.WriteLine(yearText2);
-            string badText = "abc";
-            bool isVaild = int.TryParse(badText, out int result);
-            if (!isVaild) {
-                Console.WriteLine("invaild number");
-            }
-            else {
-                Console.WriteLine(result);
-            }
+            ////8- Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";, use int. TryParse() to safely try converting it, and print "Invalid number" if it fails.
+            //string yearText = "2023";
+            //int yearText2 = int.Parse(yearText);
+            //Console.WriteLine(yearText2);
+            //string badText = "abc";
+            //bool isVaild = int.TryParse(badText, out int result);
+            //if (!isVaild) {
+            //    Console.WriteLine("invaild number");
+            //}
+            //else {
+            //    Console.WriteLine(result);
+            //}
+            #endregion
+
+            #region Question09
+            //9- Given int pages = 464;, convert it into a string using ToString() and print its type using GetType() to prove it's now a string.
+            int pages = 464;
+            string pages2 = Convert.ToString(pages);
+            Console.WriteLine(pages2);
+            Console.WriteLine(pages2.GetType());
             #endregion
         }
     }
